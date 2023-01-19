@@ -1,5 +1,7 @@
 plugins {
     id 'base'
+    id 'com.bmuschko.docker-java-application' version '9.1.0' apply false
+    id 'com.bmuschko.docker-remote-api' version '9.1.0' apply false
 }
 
 subprojects {
@@ -26,6 +28,5 @@ allprojects {
 }
 
 wrapper {
-    gradleVersion = "7.5.1"
     distributionType = Wrapper.DistributionType.ALL
 }
